@@ -22,7 +22,7 @@
                     session_start();
                     $_SESSION['usuario'] = $usuario['nome'];
                     $_SESSION['acesso'] = true;
-                    $_SESSION['id_usuario'] = $usuario['id_usuario'];
+                    $_SESSION['id'] = $usuario['id'];
                     header('location: principal.php'); 
                 } else {
                     $mensagem['erro'] = "Usuário e/ou senha incorretos!";
